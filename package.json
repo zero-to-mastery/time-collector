@@ -1,0 +1,21 @@
+{
+  "name": "time-collector",
+  "private": true,
+  "version": "0.0.1",
+  "description":
+    "\"Time Collector counts the time need on each project we do as freelancers or hobbyists, so we better know in the future how to estimate time for projects.\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zero-to-mastery/time-collector.git"
+  },
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/zero-to-mastery/time-collector/issues"
+  },
+  "homepage": "https://github.com/zero-to-mastery/time-collector#readme"
+}
