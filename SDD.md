@@ -1,9 +1,9 @@
 Time Collector
 ======
 
-> Below is a summary of the apps functionality, requirements, design language, tech specifications and more to come.  
+> Below is a summary of the apps functionality, requirements, design language, tech specifications and more to come.
 > It is intended to be used as a guide while we are building this app. Please contribute by making suggestions, changes, corrections
-> and improvements to this document as we go along. It may provide valuable when we eventually will need to write some documentation.  
+> and improvements to this document as we go along. It may provide valuable when we eventually will need to write some documentation.
 > **Happy Coding** :smile:
 
 ### Table of contents
@@ -14,8 +14,8 @@ Time Collector
    - [Project overview](#project-overview)
    - [Archive](#archive)
    - [Export options](#export-options)
-   - [Settings](#settings)  
-     
+   - [Settings](#settings)
+
 2. [Functionality details](#functionality-details)
    - [Sign in options](#sign-in-options)
    - [Guest mode](#guest-mode)
@@ -26,13 +26,13 @@ Time Collector
    - [Colors](#colors)
    - [Typography](#typography)
    - [Design language](#design-language)
-   
+
 4. [Tech details](#tech-details)
    - [Description](#description)
    - [Frontend](#frontend)
    - [CSS](#css)
    - [Backend](#backend)
-   
+
 5. [Known issues and bugs](#known-issues-and-bugs)
 
 <br><br>
@@ -49,17 +49,18 @@ App functionality
 - [ ] Have a way for users to login
 - [ ] Have a way for users to register
 - [ ] Have a guest mode
-- [ ] Have a way for users to retrieve password 
+- [ ] Have a way for users to retrieve password
 
 
 ### Timer page
 - [ ] Display today's date
 - [ ] Have a counter
 - [ ] Have a start, stop and reset button
-- [ ] Have the possibility to add manual hours 
+- [ ] Have the possibility to add manual hours
 - [ ] Be able to save time from counter to projects
 - [ ] Be able to edit time collected from counter before saving to a project
 - [ ] Option to see the expected time to use on the project
+- [ ] Option to set a reminder to return to the app when expected time expires
 
 
 ### Time overview
@@ -95,7 +96,7 @@ App functionality
 
 ### Settings
 - [ ] Profile
-- [ ] Preferences 
+- [ ] Preferences
 - [ ] Log out
 
 <br><br>
@@ -104,14 +105,14 @@ Functionality details
 ------
 
 ### Sign in options
-Simple auth with email and password or option to sign in with google, facebook, github, twitter etc..  
+Simple auth with email and password or option to sign in with google, facebook, github, twitter etc..
 
 ### Guest mode
-Users should be able to use the app without signing in if they so wish. Full functionality, but session based so nothing  
-is saved to the database.  
+Users should be able to use the app without signing in if they so wish. Full functionality, but session based so nothing
+is saved to the database.
 
 ### New project
-Users should be able to add details about a project and the client.  
+Users should be able to add details about a project and the client.
 
 - Project number
 - Project name
