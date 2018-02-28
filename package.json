@@ -1,0 +1,19 @@
+{
+  "name": "time-collector",
+  "version": "1.0.0",
+  "description": "This projects counts the time need on each project we do as freelancers or hobbyists, so we better know in the future how to estimate time for projects.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deltachannel/time-collector.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deltachannel/time-collector/issues"
+  },
+  "homepage": "https://github.com/deltachannel/time-collector#readme"
+}
