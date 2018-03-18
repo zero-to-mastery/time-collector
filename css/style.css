@@ -1,37 +1,23 @@
-/* Font .css file (Defined google fonts, for faster website functionallity) */
 @import 'font.css';
-/* Variables */
+
+/* Variable, for easier use */
 :root {
   --default-blue: #2699FB;
   --default-blue-faded: #BCE0FD;
   --default-grey: #707070;
+  --default-white: #fff;
 }
 
-/* Colors */
-.tc-blue {
-  color: var(--default-blue) !important;
-}
-.tc-faded-blue {
-  color: var(--default-blue-faded) !important;
-}
-.tc-grey {
-  color: var(--default-grey-) !important;
-}
-
-.tc-bg-blue {
-  background-color: var(--default-blue) !important;
-}
-.tc-bg-faded-blue {
-  background-color: var(--default-blue-faded) !important;
-}
-
-/* Globals */
+/* TC Globals */
 body {
   font-family: Roboto, sans-serif;
   outline: none;
 }
 button {
   font-weight: 700 !important;
+}
+button[class*="-btn"] {
+  outline-color: transparent;
 }
 h1 {
   font-size: 2rem !important;
@@ -40,28 +26,71 @@ h1 {
 h1, p {
   color: var(--default-grey);
 }
-
-/* Classes */
 .tc-container {
-  margin: 0 auto;
+  margin: 0px auto;
   height: 100vh;
   max-width: 576px;
 }
+
+/* TC defined colors */
+.tc-white {
+  color: var(--default-white) !important;
+}
+.tc-blue {
+  color: var(--default-blue) !important;
+}
+.tc-faded-blue {
+  color: var(--default-blue-faded) !important;
+}
+.tc-grey {
+  color: var(--default-grey) !important;
+}
+/* TC defined bg colors */
+.tc-bg-blue {
+  background-color: var(--default-blue) !important;
+}
+.tc-bg-faded-blue {
+  background-color: var(--default-blue-faded) !important;
+}
+
+/* TC Classes */
+
+/* Index.html */
 .tc-icon {
   font-size: 10rem;
-}
-.tc-arrow-back {
-	font-size: 1.5rem;
-  cursor: pointer;
-}
-.tc-social-outline-blue {
-  border: 1px solid var(--default-blue);
 }
 .tc-btn-main-action {
   flex-shrink: 0;
   width: 80%;
 }
-/* Form customisation */
+
+/* Login.html and Register.html */
+.tc-exit-btn {
+  border: none;
+  background-color: inherit;
+  font-size: 2rem;
+}
+.tc-social-btn {
+  border: 2px solid var(--default-blue-faded);
+  background-color: #fff;
+  width: 75px;
+  height: 75px;
+}
+.tc-social-btn:focus {
+  box-shadow: 0px 0px 3pt 5pt var(--default-blue-faded);
+  border-color: var(--default-blue);
+}
+.tc-social-btn:focus i {
+  transform: scale(2);
+}
+.tc-social-btn,
+.tc-social-btn i {
+  transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s ease-in-out;
+  -webkit-transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s ease-in-out;
+}
+.tc-form-field-container .tc-input-label {
+  position: relative;
+}
 .tc-form-field-container {
   font-size: 16px;
 }
@@ -70,10 +99,7 @@ h1, p {
   top: 13px;
   left: 9px;
   color: var(--default-blue);
-  font-size: 1.2em;
-}
-.tc-form-field-container .tc-input-label {
-  position: relative;
+  font-size: 1.2rem;
 }
 .tc-form-field-container input {
   border: none;
@@ -115,4 +141,52 @@ h1, p {
   opacity: 0.5;
   font-style: italic;
   font-family: Montserrat, sans-serif;
+}
+
+/* Collect.html */
+.tc-nav-btn {
+  border: none;
+  background-color: #fff;
+  font-size: 1.3em;
+}
+.tc-faded-btn {
+  opacity: 0.5;
+  transition: opacity 0.38s ease-in-out;
+  -webkit-transition: opacity 0.38s ease-in-out;
+}
+.tc-circle-btn {
+  width: 90px;
+  height: 90px;
+  border: 3px solid var(--default-blue);
+  font-size: 1.2em;
+  background-color: #fff;
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+}
+.tc-circle-btn:active,
+.tc-faded-btn:active {
+  transform: rotateY(360deg);
+}
+
+/* Menu.html */
+.tc-user-icon {
+  font-size: 4rem;
+  color: var(--default-white);
+}
+.tc-menu-list {
+  list-style-type: none;
+  font-size: 1.3em;
+}
+.tc-menu-item {
+  margin-top: 15px;
+}
+.tc-link,
+.tc-link:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.tc-link:active,
+.tc-link:focus {
+  color: #fff;
+  text-decoration: underline;
 }
