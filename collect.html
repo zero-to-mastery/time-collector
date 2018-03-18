@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<!-- Bootstrap -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<!-- FontAwesome -->
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<!-- TC-stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>TC - Collect</title>
+</head>
+<body>
+
+	<div class="d-flex flex-column align-items-center px-2 tc-container">
+
+		<!-- Top row (Menu button, Page name, Info button) -->
+		<div class="d-flex justify-content-between w-100 tc-blue my-5">
+			<button type="button" class="tc-nav-btn tc-blue">
+				<i class="fas fa-bars"></i>
+			</button>
+
+			<h5 class="text-uppercase tc-blue align-self-center">Collect</h5>
+
+			<button type="button" class="tc-nav-btn tc-blue">
+				<i class="fas fa-ellipsis-v"></i>
+			</button>
+		</div>
+
+		<!-- Date -->
+		<p class="tc-blue">Wed 18, Febuary 18</p>
+		
+		<!-- Timer -->
+		<div class="w-100 text-center mt-5">
+			<button type="button" class="tc-circle-btn tc-grey rounded-circle">Start</button>
+
+			<div class="my-5 d-flex w-100 justify-content-between">
+				<button type="button" class="tc-circle-btn tc-grey rounded-circle">Stop</button>
+				
+				<h2 class="h1 tc-blue align-self-center">00:00</h2>
+
+				<button type="button" class="tc-circle-btn tc-grey rounded-circle">Reset</button>
+			</div>
+
+			<button type="button" class="tc-circle-btn tc-grey tc-faded-btn rounded-circle">Manual</button>
+		</div>
+	</div>
+
+</body>
+</html>
