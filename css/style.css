@@ -1,0 +1,118 @@
+/* Font .css file (Defined google fonts, for faster website functionallity) */
+@import 'font.css';
+/* Variables */
+:root {
+  --default-blue: #2699FB;
+  --default-blue-faded: #BCE0FD;
+  --default-grey: #707070;
+}
+
+/* Colors */
+.tc-blue {
+  color: var(--default-blue) !important;
+}
+.tc-faded-blue {
+  color: var(--default-blue-faded) !important;
+}
+.tc-grey {
+  color: var(--default-grey-) !important;
+}
+
+.tc-bg-blue {
+  background-color: var(--default-blue) !important;
+}
+.tc-bg-faded-blue {
+  background-color: var(--default-blue-faded) !important;
+}
+
+/* Globals */
+body {
+  font-family: Roboto, sans-serif;
+  outline: none;
+}
+button {
+  font-weight: 700 !important;
+}
+h1 {
+  font-size: 2rem !important;
+  font-weight: 900;
+}
+h1, p {
+  color: var(--default-grey);
+}
+
+/* Classes */
+.tc-container {
+  margin: 0 auto;
+  height: 100vh;
+  max-width: 576px;
+}
+.tc-icon {
+  font-size: 10rem;
+}
+.tc-arrow-back {
+	font-size: 1.5rem;
+  cursor: pointer;
+}
+.tc-social-outline-blue {
+  border: 1px solid var(--default-blue);
+}
+.tc-btn-main-action {
+  flex-shrink: 0;
+  width: 80%;
+}
+/* Form customisation */
+.tc-form-field-container {
+  font-size: 16px;
+}
+.tc-form-field-container i {
+  position: absolute;
+  top: 13px;
+  left: 9px;
+  color: var(--default-blue);
+  font-size: 1.2em;
+}
+.tc-form-field-container .tc-input-label {
+  position: relative;
+}
+.tc-form-field-container input {
+  border: none;
+  padding: 10px 8px 10px 36px;
+  font-size: 1em;
+  font-family: Montserrat, sans-serif;
+  text-indent: 15px;
+  border-bottom: 2px solid var(--default-blue-faded);
+}
+.tc-form-field-container input:focus {
+  box-shadow: none;
+  border-bottom: 2px solid var(--default-blue);
+  transition: border-bottom 0.5s ease-out;
+  -webkit-transition: border-bottom 0.5s ease-out;
+  -moz-transition: border-bottom 0.5s ease-out;
+  -o-transition: border-bottom 0.5s ease-out;
+}
+/* Input placeholders customisation */
+.tc-form-field-container input::-webkit-input-placeholder {
+  color: var(--default-grey);
+  opacity: 0.5;
+  font-style: italic;
+  font-family: Montserrat, sans-serif;
+}
+.tc-form-field-container input::-moz-input-placeholder {
+  color: var(--default-grey);
+  opacity: 0.5;
+  font-style: italic;
+  font-family: Montserrat, sans-serif;
+}
+.tc-form-field-container input::-ms-input-placeholder {
+  color: var(--default-grey);
+  opacity: 0.5;
+  font-style: italic;
+  font-family: Montserrat, sans-serif;
+}
+.tc-form-field-container input::placeholder {
+  color: var(--default-grey);
+  opacity: 0.5;
+  font-style: italic;
+  font-family: Montserrat, sans-serif;
+}

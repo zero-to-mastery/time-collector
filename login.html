@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<!-- Bootstrap -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<!-- FontAwesome -->
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<!-- TC-stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>TC - Sign In</title>
+</head>
+<body>
+
+	<div class="d-flex flex-column align-items-center px-0 tc-container">
+
+		<!-- FontAwesome back Btn -->
+		<a class="tc-arrow-back mt-4 mr-auto pl-3"><i class="fas fa-arrow-left tc-blue"></i></a>
+
+		<!-- TC - Sign In form field container -->
+		<form class="form-group w-100 mt-5" method="POST">
+
+			<!-- User, username input field -->
+			<div class="tc-form-field-container p-3">
+				<label for="tc-login-username" class="tc-input-label w-100">
+					<i class="fas fa-user"></i>
+					<input type="text" class="form-control rounded-0" name="tc-login-username" id="tc-login-username" placeholder="Enter username">
+				</label>
+			</div>
+
+			<!-- User, password input field -->
+			<div class="tc-form-field-container p-3">
+				<label for="tc-login-password" class="tc-input-label w-100">
+					<i class="fas fa-lock"></i>
+					<input type="password" class="form-control rounded-0" name="tc-login-password" id="tc-login-password" placeholder="Enter password">
+				</label>
+			</div>
+
+			<!-- Main button ("SignIn") and Forgotten password-->
+			<div class="tc-form-field-container p-3">
+				<button class="w-100 btn text-uppercase text-white py-3 tc-bg-blue tc-btn-main-action">Log in</button>
+			</div>
+			<a href="#"><p class="tc-blue small text-center">I've forgot my key...</p></a>
+		</form>
+
+		<!-- Social buttons (Facebook, Github, Google+) -->
+		<div class="mx-auto">
+			<button class="btn bg-white tc-social-outline-blue tc-blue rounded-circle px-4 py-3 mx-2"><i class="fab fa-facebook-f"></i></button>
+
+			<button class="btn bg-white tc-social-outline-blue tc-blue rounded-circle px-4 py-3 mx-2"><i class="fab fa-github"></i></button>
+
+			<button class="btn bg-white tc-social-outline-blue tc-blue rounded-circle px-4 py-3 mx-2"><i class="fab fa-google-plus-g"></i></button>
+		</div>
+
+		<div class="mt-auto w-100 text-center">
+
+			<p class="tc-blue small">Don't have an account yet?</p>
+			<button id="tc-register-btn" class="btn btn-block rounded-0 py-3 text-uppercase tc-blue tc-bg-faded-blue">Register</button>
+
+		</div>
+
+	</div>
+
+</body>
+</html>
