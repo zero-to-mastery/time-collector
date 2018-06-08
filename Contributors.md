@@ -23,5 +23,5 @@ Time-collector contributors
 
 * **[pryordesign](https://github.com/pryordesign)**
 * **[w3bh4ck](https://github.com/w3bh4ck)**
-
+* **[Oghenebrume50](https://github.com/Oghenebrume50)**
 **[Full contributors list](https://github.com/zero-to-mastery/time-collector/graphs/contributors).**
