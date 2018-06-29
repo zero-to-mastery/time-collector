@@ -26,4 +26,6 @@ Time-collector contributors
 
 * **[sithlord68](https://github.com/sithlord68)**
 
+* **[jarhae1](https://github.com/jarhae1)**
+
 **[Full contributors list](https://github.com/zero-to-mastery/time-collector/graphs/contributors).**
