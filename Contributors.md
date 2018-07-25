@@ -1,31 +1,32 @@
-Time-collector contributors
-============================================
+# Time-collector contributors
 
-* **[KlaidasVysniauskas](https://github.com/KlaidasVysniauskas)**
+- **[KlaidasVysniauskas](https://github.com/KlaidasVysniauskas)**
 
-* **[Tumselass](https://github.com/Tumselass)**
+- **[Tumselass](https://github.com/Tumselass)**
 
-* **[SamirJouni](https://github.com/SamirJouni)**
+- **[SamirJouni](https://github.com/SamirJouni)**
 
-* **[tsmilan](https://github.com/tsmilan)**
+- **[tsmilan](https://github.com/tsmilan)**
 
-* **[israteneda](https://github.com/israteneda)**
+- **[israteneda](https://github.com/israteneda)**
 
-* **[hadeybamz](https://github.com/hadeybamz)**
+- **[hadeybamz](https://github.com/hadeybamz)**
 
-* **[Digital-Dreams-IT-Solutions](https://github.com/Digital-Dreams-IT-Solutions)**
+- **[Digital-Dreams-IT-Solutions](https://github.com/Digital-Dreams-IT-Solutions)**
 
-* **[jamicope](https://github.com/jamicope)**
+- **[jamicope](https://github.com/jamicope)**
 
-* **[Oleg Efimov](https://github.com/Sannis)**
+- **[Oleg Efimov](https://github.com/Sannis)**
 
-* **[drood87](https://github.com/drood87)**
+- **[drood87](https://github.com/drood87)**
 
-* **[pryordesign](https://github.com/pryordesign)**
-* **[w3bh4ck](https://github.com/w3bh4ck)**
+- **[pryordesign](https://github.com/pryordesign)**
+- **[w3bh4ck](https://github.com/w3bh4ck)**
 
-* **[sithlord68](https://github.com/sithlord68)**
+- **[sithlord68](https://github.com/sithlord68)**
 
-* **[jarhae1](https://github.com/jarhae1)**
+- **[jarhae1](https://github.com/jarhae1)**
+
+- **[MatthewStoddart](https://github.com/MatthewStoddart)**
 
 **[Full contributors list](https://github.com/zero-to-mastery/time-collector/graphs/contributors).**
