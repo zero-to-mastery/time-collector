@@ -30,3 +30,5 @@
 - **[MatthewStoddart](https://github.com/MatthewStoddart)**
 
 **[Full contributors list](https://github.com/zero-to-mastery/time-collector/graphs/contributors).**
+
+- **[patrickdhayes](https://github.com/patrickdhayes)**
