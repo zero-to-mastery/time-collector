@@ -32,3 +32,5 @@
 **[Full contributors list](https://github.com/zero-to-mastery/time-collector/graphs/contributors).**
 
 - **[patrickdhayes](https://github.com/patrickdhayes)**
+
+- **[aks775](https://github.com/aks775)**
