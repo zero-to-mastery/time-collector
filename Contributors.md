@@ -36,3 +36,5 @@
 - **[aks775](https://github.com/aks775)**
 
 -[@ashtheyogi](https://github.com/Ashtheyogi)
+
+- **[mortenkos](https://github.com/mortenkos)**

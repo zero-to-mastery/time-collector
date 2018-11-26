@@ -6,6 +6,7 @@
   --default-blue-faded: #BCE0FD;
   --default-grey: #707070;
   --default-white: #fff;
+  --default-red: #ff6347;
 }
 
 /* TC Globals */
@@ -38,6 +39,9 @@ h1, p {
 }
 .tc-blue {
   color: var(--default-blue) !important;
+}
+.tc-red {
+  color: var(--default-red) !important;
 }
 .tc-faded-blue {
   color: var(--default-blue-faded) !important;
@@ -163,9 +167,20 @@ h1, p {
   transition: transform 0.5s ease-in-out;
   -webkit-transition: transform 0.5s ease-in-out;
 }
+.red-border {
+  border: 3px solid var(--default-red);
+}
+
 .tc-circle-btn:active,
 .tc-faded-btn:active {
   transform: rotateY(360deg);
+}
+
+#workingStage {
+  display: inline-block;
+}
+#tm {
+  display: block;
 }
 
 /* Menu.html */

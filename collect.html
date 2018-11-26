@@ -35,12 +35,18 @@
 		
 		<!-- Timer -->
 		<div class="w-100 text-center mt-5">
-			<button type="button" id="startBtn" class="tc-circle-btn tc-grey rounded-circle">Start</button>
+      <p>Total Time:</p>
+      <p id="totalTime">00:00:00</p>
+      <button type="button" id="startBtn" class="tc-circle-btn tc-grey rounded-circle" data-toggle="start">Start</button>
+      <!-- <button type="button" id="breakBtn" class="breakBtn tc-circle-btn tc-grey rounded-circle">Break</button> -->
 
 			<div class="my-5 d-flex w-100 justify-content-between">
 				<button type="button" id="stopBtn" class="tc-circle-btn tc-grey rounded-circle">Stop</button>
-				
-				<h2 id="timer" class="h1 tc-blue align-self-center">00:00:00</h2>
+        
+        <div id="tm">
+            <p id="workingStage" class="tc-red">Let's Get Started</p>
+            <h2 id="timer" class="h1 tc-blue align-self-center">00:00:00</h2>
+        </div>
 
 				<button type="button" id="resetBtn" class="tc-circle-btn tc-grey rounded-circle">Reset</button>
 			</div>
