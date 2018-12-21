@@ -2,6 +2,8 @@
 
 - **[KlaidasVysniauskas](https://github.com/KlaidasVysniauskas)**
 
+- **[davidbordeleau](https://github.com/davidbordeleau)**
+
 - **[Tumselass](https://github.com/Tumselass)**
 
 - **[SamirJouni](https://github.com/SamirJouni)**
