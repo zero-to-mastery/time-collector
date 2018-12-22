@@ -31,19 +31,10 @@
 		</div>
 
 		<!-- Date -->
-    <p class="tc-blue">
-      <script>
-        let options = {
-          weekday: "long",
-          day: "numeric",
-          month: "long"
-        };
-       document.write(new Date().toLocaleDateString("en-US", options)); 
-      </script>
-    </p>
+    <p class="date tc-blue"></p>
 		
 		<!-- Timer -->
-		<div class="w-100 text-center mt-5">
+		<div class="w-100 text-center my-5">
       <p>Total Time:</p>
       <p id="totalTime">00:00:00</p>
       <button type="button" id="startBtn" class="tc-circle-btn tc-grey rounded-circle" data-toggle="start">Start</button>
@@ -64,5 +55,6 @@
 		</div>
 	</div>
 <script src="js/functions.js"></script>
+<script src="js/date.js"></script>
 </body>
 </html>
