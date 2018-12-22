@@ -31,7 +31,16 @@
 		</div>
 
 		<!-- Date -->
-		<p class="tc-blue">Wed 18, Febuary 18</p>
+    <p class="tc-blue">
+      <script>
+        let options = {
+          weekday: "long",
+          day: "numeric",
+          month: "long"
+        };
+       document.write(new Date().toLocaleDateString("en-US", options)); 
+      </script>
+    </p>
 		
 		<!-- Timer -->
 		<div class="w-100 text-center mt-5">
