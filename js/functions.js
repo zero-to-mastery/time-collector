@@ -72,6 +72,7 @@ startBtn.addEventListener("click", () => {
 stopBtn.addEventListener("click", () => {
   stopTimer(timerVar);
   stopTimer(breakVar);
+  startBtn.classList.remove("red-border");
 });
 
 resetBtn.addEventListener("click", () => {
@@ -84,7 +85,7 @@ resetBtn.addEventListener("click", () => {
   workSeconds = 0;
   startBtn.innerText = 'Start';
   workingStage.innerText = "Let's Get Started";
-
+  startBtn.classList.remove("red-border");
 });
 
 const stopTimer = timer => clearInterval(timer);
