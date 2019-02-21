@@ -1,2 +1,3 @@
 # time-collector
-This projects counts the time need on each project we do as freelancers or hobbyists, so we better know in the future how to estimate time for projects.
+
+This timer allows you to keep track of how long you've spent working on each project, to help more accurately estimate your time for future projects.
