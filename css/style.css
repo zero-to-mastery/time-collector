@@ -16,6 +16,9 @@ body {
 }
 button {
   font-weight: 700 !important;
+  border:none;
+  background-color:transperant;
+  outline:none;
 }
 button[class*="-btn"] {
   outline-color: transparent;
