@@ -50,3 +50,5 @@
 - **[dirkmomsen](https://github.com/dirkmomsen)**
 
 - **[RoyaKar](https://github.com/RoyaKar)**
+
+- **[sevydev](https://github.com/sevydev)**
