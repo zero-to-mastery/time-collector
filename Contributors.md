@@ -52,3 +52,5 @@
 - **[RoyaKar](https://github.com/RoyaKar)**
 
 - **[sevydev](https://github.com/sevydev)**
+
+- **[Henri](https://github.com/MrHenryA/)**
