@@ -54,3 +54,5 @@
 - **[sevydev](https://github.com/sevydev)**
 
 - **[Henri](https://github.com/MrHenryA/)**
+
+- **[bp96](https://github.com/bp96/)**
