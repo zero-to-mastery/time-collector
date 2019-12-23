@@ -25,3 +25,4 @@ var timeDisplay = document.querySelector(time);
 	timeDisplay.textContent = "Page Loaded: " + timeValue.slice(9,);
 }
 putTime(".time");
+
