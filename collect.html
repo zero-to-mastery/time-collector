@@ -19,12 +19,30 @@
 
 		<!-- Top row (Menu button, Page name, Info button) -->
 		<div class="d-flex justify-content-between w-100 tc-blue my-5">
-			<button type="button" class="tc-nav-btn tc-blue">
-				<i class="fas fa-bars"></i>
-			</button>
+			<section>
+			<!-- Navigation/burger menu starts-->
+				<div class="topnav">
+				  <a href="#home" class="active">...</a>
+				  <!-- Navigation links (hidden by default) -->
+				  <div id="myLinks">
+				    <a href="#news">Home</a>
+				    <a href="#collect">Collect</a>
+				    <a href="#contact">Contact</a>
+				    <a href="#about">About</a>
+				  </div>
+				  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+				  <a href="javascript:void(0);" class="icon tc-blue" onclick="myFunction()">
+				    <i class="fa fa-bars"></i>
+				  </a>
+				</div>
+			<!-- Navigation/burger menu ends -->
+			
+			</section>
 
+			<!-- Collect title in the centre of page -->
 			<h5 class="text-uppercase tc-blue align-self-center">Collect</h5>
 
+			<!-- Button for ellipsis (still needs to be activated) -->
 			<button type="button" class="tc-nav-btn tc-blue">
 				<i class="fas fa-ellipsis-v"></i>
 			</button>
@@ -33,7 +51,6 @@
 		<!-- Date and time-->
     <p class="date tc-blue"></p>
     <p class="time tc-blue"></p>
-
 		
 		<!-- Timer -->
 		<div class="w-100 text-center my-5">

@@ -283,3 +283,44 @@ p {
     box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
   }
 }
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: absolute;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: .tc-blue;
+  background-color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: white;
+  color: white;
+}
