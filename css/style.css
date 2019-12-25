@@ -324,3 +324,49 @@ p {
   background-color: white;
   color: white;
 }
+
+/* Style the popup container for save project */
+.popup-container {
+  position: fixed;
+  top: 7em;
+  box-shadow: 3px 15px 20px #d6ecff;
+  max-width: 520px;
+  width: 80vw;
+  z-index: 200;
+}
+
+.save-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+}
+
+.circle {
+  margin: 20px;
+  display: flex;
+  width: 230px;
+  height: 230px;
+  background: #F7FBFE;
+  border-radius: 150px;
+  align-items: center;
+}
+
+.inner-circle {
+  margin: 0 auto;
+  width: 110px;
+  height: 110px;
+  background: #dbeeff;
+  border-radius: 70px;
+}
+
+.add-time {
+  font-size: 45px;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 3px #2699FB;
+}
+
+select:invalid {
+  color: #F7FBFE;
+}
