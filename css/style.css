@@ -367,6 +367,20 @@ p {
   text-shadow: 1px 1px 3px #2699FB;
 }
 
-select:invalid {
-  color: #F7FBFE;
+.drop-box {
+  max-width: 80%;
+  width: 400px;
+  border: 2px solid #c7e5ff;
+}
+
+.placeholder {
+  color: #BCE0FD;
+  padding: 15px 0 15px 0;
+  font-size: 18px;
+  align-self: center;
+}
+
+.option {
+  color: #3CA3FB;
+  align-self: center;
 }
