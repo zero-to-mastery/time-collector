@@ -35,10 +35,10 @@ const startTimer = () => {
     breakSeconds++;
     timer.innerHTML = `${pad(setHour(breakSeconds))}:${pad(setMinute(breakSeconds))}:${pad(setSeconds(breakSeconds))}`;
   }
-  
+
   totalTime.innerHTML = `${pad(setHour(totalSeconds))}:${pad(setMinute(totalSeconds))}:${pad(setSeconds(totalSeconds))}`;
-  
 };
+
 const timerBreak = () => {
   breakSeconds++;
   let hour = Math.floor(breakSeconds / 3600);
@@ -68,11 +68,26 @@ startBtn.addEventListener("click", () => {
   }
 });
 
+stopBtn.addEventListener("click", (e) => {
 
-stopBtn.addEventListener("click", () => {
+  // Trigger save-project popup container
+  if (e.target.textContent === "Save") {
+    const setHour = seconds => Math.floor(seconds / 3600),
+          setMinute = seconds => Math.floor((seconds / 60) % 60);
+    stopTimer(timerVar);
+    stopTimer(breakVar);
+
+    // show hours and minutes used on current timer
+    document.querySelector('#save-project .add-time').textContent = `${pad(setHour(totalSeconds))}:${pad(setMinute(totalSeconds))}`;
+    document.querySelector('#save-project').classList.add('show-popup');
+    document.querySelector('.tc-container').classList.add('disable-click');
+    return
+  }
+
   stopTimer(timerVar);
   stopTimer(breakVar);
   startBtn.classList.remove("red-border");
+  e.target.textContent = "Save";
 });
 
 resetBtn.addEventListener("click", () => {

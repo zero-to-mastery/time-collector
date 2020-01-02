@@ -36,7 +36,7 @@
 				  </a>
 				</div>
 			<!-- Navigation/burger menu ends -->
-			
+
 			</section>
 
 			<!-- Collect title in the centre of page -->
@@ -48,10 +48,43 @@
 			</button>
 		</div>
 
+		<!-- save project modal -->
+		<div class="popup-container bg-white" id="save-project">
+			<a href="collect.html" class="tc-exit-btn mr-auto pl-3">
+				<i class="fas fa-arrow-left tc-blue"></i>
+			</a>
+			<h4 class="tc-blue font-weight-bold">Save to project</h4>
+			<div class="circle">
+				<div class="inner-circle d-flex justify-content-center" >
+					<h5 class="add-time tc-blue align-self-center">01:10</h5>
+				</div>
+			</div>
+			<p class="date tc-blue"></p>
+
+			<div class="custom-select-wrapper d-flex flex-column">
+				<div class="d-flex custom-select-box pr-3">
+					<span class="placeholder">Select Project</span>
+					<div class="chevron-arrow"></div>
+				</div>
+				<div class="options-list">
+					<div class="custom-option">101 - Awesome GP</div>
+					<div class="custom-option">102 - Project 2</div>
+					<div class="custom-option">103 - Delivery</div>
+					<div class="custom-option">104 - Food Blog</div>
+				</div>
+			</div>
+
+			<div class="d-flex">
+				<div class="save-btn text-white btn-padding faded-blue-bg">SAVE</div>
+				<div class="edit-btn tc-blue btn-padding">EDIT</div>
+			</div>
+
+		</div>
+
 		<!-- Date and time-->
-    <p class="date tc-blue"></p>
+    <p class="date"></p>
     <p class="time tc-blue"></p>
-		
+
 		<!-- Timer -->
 		<div class="w-100 text-center my-5">
       <p>Total Time:</p>
@@ -61,7 +94,7 @@
 
 			<div class="my-5 d-flex w-100 justify-content-between">
 				<button type="button" id="stopBtn" class="tc-circle-btn tc-grey rounded-circle">Stop</button>
-        
+
         <div id="tm">
             <p id="workingStage" class="tc-red">Let's Get Started</p>
             <h2 id="timer" class="h1 tc-blue align-self-center">00:00:00</h2>
@@ -75,5 +108,8 @@
 	</div>
 <script src="js/functions.js"></script>
 <script src="js/date.js"></script>
+<script src="js/functions2.js">
+
+</script>
 </body>
 </html>

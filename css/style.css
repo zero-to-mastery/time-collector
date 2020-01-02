@@ -324,3 +324,189 @@ p {
   background-color: white;
   color: white;
 }
+
+/* Style a general popup container class */
+.popup-container {
+  position: fixed;
+  top: 6em;
+  box-shadow: 3px 15px 20px #d6ecff;
+  max-width: 520px;
+  width: 85vw;
+  z-index: 10;
+  box-sizing: border-box;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  max-height: 80vh;
+  pointer-events: auto;
+}
+
+/* style the outer circle */
+.circle {
+  margin: 20px;
+  display: flex;
+  width: 230px;
+  min-height: 230px;
+  background: #F7FBFE;
+  border-radius: 150px;
+  align-items: center;
+}
+
+/* style the inner circle */
+.inner-circle {
+  margin: 0 auto;
+  width: 110px;
+  height: 110px;
+  background: #dbeeff;
+  border-radius: 70px;
+}
+
+/* style time in save-project popup */
+.add-time {
+  font-size: 45px;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 3px #2699FB;
+}
+
+/* Styling wrapper for custom select element */
+.custom-select-wrapper {
+  background-color: white;
+  width: 80%;
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+}
+
+.custom-select-box, .options-list {
+  margin: 0;
+  width: 100%;
+  border: 2px solid var(--default-blue-faded);
+}
+
+.custom-select-box {
+  padding: 15px 15px 7px 0 !important;
+}
+
+.open .custom-select-box {
+  border-bottom: none;
+}
+
+.custom-select-box span {
+  width: 100%;
+}
+
+/* style text placeholder for save-project popup */
+.placeholder {
+  color: var(--default-blue-faded);
+}
+
+.active-option {
+  color: var(--default-blue);
+}
+
+/* draw and style down-chevron arrow */
+.chevron-arrow {
+  padding: 0;
+  position: relative;
+  margin: 0 0 0 auto;
+  height: 15px;
+  width: 15px;
+}
+
+.chevron-arrow::before, .chevron-arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 0.15rem;
+  height: 50%;
+  transition: all 0.3s;
+}
+
+.chevron-arrow::before {
+   left: -2.2px;
+   transform: rotate(-45deg);
+   background-color: var(--default-blue);
+}
+
+.chevron-arrow::after {
+  left: 2.5px;
+  transform: rotate(45deg);
+  background-color: var(--default-blue);
+}
+
+.open .chevron-arrow::before {
+  left: -2.2px;
+  transform: rotate(45deg);
+}
+
+.open .chevron-arrow::after {
+  left: 2.2px;
+  transform: rotate(-45deg);
+}
+
+.custom-option:hover, .chevron-arrow:hover {
+  cursor: pointer;
+}
+
+/* styling custom select dropdown options list */
+.options-list {
+  position: absolute;
+  top: 100%;
+  padding-right: 30px;
+  display: none;
+  background-color: white;
+  border-top: none;
+  z-index: 15;
+  height: 10vh;
+  overflow-y: scroll;
+  color: var(--default-blue);
+}
+
+.open .options-list {
+  display: block;
+}
+
+.options-list::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-option {
+  position: relative;
+  padding: 7px 0 7px 0;
+  width: 100%;
+}
+
+.faded-blue-bg {
+  background-color: var(--default-blue-faded);
+}
+
+.blue-bg {
+  background-color: var(--default-blue);
+}
+
+.save-btn {
+  font-size: 12px;
+  border-radius: 3px;
+  margin: 20px 10px 40px 10px;
+  border: 2px solid rgba(60, 163, 251, 0);
+}
+
+.edit-btn {
+  font-size: 12px;
+  border: 2px solid rgba(60, 163, 251, 0.4);
+  border-radius: 3px;
+  margin: 20px 10px 40px 10px;
+}
+
+.btn-padding {
+  padding: 10px 30px 10px 30px;
+}
+
+.disable-click {
+  pointer-events: none;
+}
+
+.show-popup {
+  display: flex!important;
+}
