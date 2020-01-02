@@ -48,28 +48,41 @@
 			</button>
 		</div>
 
-		<div class="popup-container">
-			<div class="save-project d-flex flex-column bg-white">
-				<a href="register.html" class="tc-exit-btn mt-4 mr-auto pl-3">
-					<i class="fas fa-arrow-left tc-blue"></i>
-				</a>
-				<h4 class="tc-blue font-weight-bold">Save to project</h4>
-				<div class="circle">
-					<div class="inner-circle d-flex justify-content-center" >
-						<h5 class="add-time tc-blue align-self-center">01:10</h5>
-					</div>
+		<!-- save project modal -->
+		<div class="popup-container bg-white" id="save-project">
+			<a href="collect.html" class="tc-exit-btn mr-auto pl-3">
+				<i class="fas fa-arrow-left tc-blue"></i>
+			</a>
+			<h4 class="tc-blue font-weight-bold">Save to project</h4>
+			<div class="circle">
+				<div class="inner-circle d-flex justify-content-center" >
+					<h5 class="add-time tc-blue align-self-center">01:10</h5>
 				</div>
-				<p class="date tc-blue"></p>
-
-				<div class="drop-box d-flex flex-column">
-					<div class="placeholder">Select Project</div>
-				</div>
-
 			</div>
+			<p class="date tc-blue"></p>
+
+			<div class="custom-select-wrapper d-flex flex-column">
+				<div class="d-flex custom-select-box pr-3">
+					<span class="placeholder">Select Project</span>
+					<div class="chevron-arrow"></div>
+				</div>
+				<div class="options-list">
+					<div class="custom-option">101 - Awesome GP</div>
+					<div class="custom-option">102 - Project 2</div>
+					<div class="custom-option">103 - Delivery</div>
+					<div class="custom-option">104 - Food Blog</div>
+				</div>
+			</div>
+
+			<div class="d-flex">
+				<div class="save-btn text-white btn-padding faded-blue-bg">SAVE</div>
+				<div class="edit-btn tc-blue btn-padding">EDIT</div>
+			</div>
+
 		</div>
 
 		<!-- Date and time-->
-    <p class="date tc-blue"></p>
+    <p class="date"></p>
     <p class="time tc-blue"></p>
 
 		<!-- Timer -->
@@ -95,5 +108,8 @@
 	</div>
 <script src="js/functions.js"></script>
 <script src="js/date.js"></script>
+<script src="js/functions2.js">
+
+</script>
 </body>
 </html>
