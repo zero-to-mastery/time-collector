@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<!-- Bootstrap -->
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+	<!-- FontAwesome -->
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<!-- TC-stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<title>TC - Register</title>
+	<link rel="icon" href="./img/clock64.png"></link>
+</head>
+<body>
+	
+	<div class="d-flex flex-column align-items-center px-0 tc-container">
+
+		<!-- FontAwesome back Btn -->
+		<a href="index.html" class="tc-arrow-back mt-4 mr-auto pl-3"><i class="fas fa-arrow-left tc-blue"></i></a>
+
+		<!-- TC-Registration form -->
+		<form class="form-group w-100 mt-4" method="POST">
+
+			<!-- User name, input field container -->
+			<div class="tc-form-field-container p-3">
+				<label for="tc-register-username" class="tc-input-label w-100">
+					<i class="fas fa-user"></i>
+					<input type="text" class="form-control rounded-0" name="tc-register-username" id="tc-register-username" placeholder="Your name">
+				</label>
+			</div>
+
+			<!-- User email, input field container -->
+			<div class="tc-form-field-container p-3">
+  				<label for="tc-register-email" class="tc-input-label w-100">
+    				<i class="fas fa-envelope"></i>
+    				<input type="email" class="form-control rounded-0" name="email" id="tc-register-email" placeholder="Your email">
+  				</label>
+			</div>
+
+			<!-- User password, input field cointainer -->
+			<div class="tc-form-field-container p-3">
+  				<label for="tc-register-password" class="tc-input-label w-100">
+    				<i class="fas fa-lock"></i>
+    				<input type="password" class="form-control rounded-0" name="tc-register-password" id="tc-register-password" placeholder="Your password">
+  				</label>
+			</div>
+
+			<div class="tc-form-field-container p-3">
+				<button class="w-100 btn text-white my-2 py-3 text-uppercase tc-bg-blue tc-btn collect-btn">Continue</button>
+			</div>
+		</form>
+
+		<!-- Social buttons (Facebook, Github, Google+) -->
+		<div class="mb-3 mx-auto">
+			<button class="btn bg-white tc-social-btn tc-blue rounded-circle mx-2"><i class="fab fa-facebook-f"></i></button>
+
+			<button class="btn bg-white tc-social-btn tc-blue rounded-circle mx-2"><i class="fab fa-github"></i></button>
+
+			<button class="btn bg-white tc-social-btn tc-blue rounded-circle mx-2"><i class="fab fa-google-plus-g"></i></button>
+		</div>
+
+		<!-- Reminder (If user has an account) Login -->
+		<div class="mt-auto w-100 text-center px-3">
+
+			<p class="tc-blue small">Already have an account?</p>
+
+			<a href="./login.html">
+				<button id="tc-register-btn" class="w-100 btn btn-block rounded-0 py-3 text-uppercase tc-blue tc-bg-faded-blue mb-3 mx-auto tc-btn">Log In</button>
+			</a>
+
+		</div>
+
+	</div>
+
+</body>
+</html>

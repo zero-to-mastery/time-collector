@@ -1,0 +1,14 @@
+/* Defining google fonts with @font-face */
+
+@font-face {
+	font-family: "Roboto";
+	src: url("fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url("fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
