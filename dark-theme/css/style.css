@@ -1,0 +1,519 @@
+@import 'font.css';
+
+/* Variable, for easier use */
+:root {
+  --default-blue: #2699FB;
+  --default-blue-faded: #BCE0FD;
+  --default-grey: #707070;
+  --default-white: #fff;
+  --default-red: #ff6347;
+}
+
+/* TC Globals */
+body {
+  font-family: Roboto, sans-serif;
+  outline: none;
+  /*background: linear-gradient(to right, rgba(193,193,193,.75), rgba(193,193,193,.25)) no-repeat center center fixed;*/
+  background-color: #666;
+  background: linear-gradient(to right, #3b4b5b, #27354a) no-repeat center center fixed;
+}
+
+button {
+  font-weight: 700 !important;
+  border: none;
+  background-color: transperant;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button[class*="-btn"] {
+  outline-color: transparent;
+}
+
+h1 {
+  font-size: 2rem !important;
+  font-weight: 900;
+}
+
+h1, p {
+  /*color: var(--default-grey);*/
+  color: lightgrey;
+}
+
+.tc-container {
+  margin: 0px auto;
+  height: 100vh;
+  max-width: 576px;
+}
+
+/* TC defined colors */
+.tc-white {
+  color: var(--default-white) !important;
+}
+
+.tc-blue {
+  color: var(--default-blue) !important;
+}
+
+.tc-red {
+  color: var(--default-red) !important;
+}
+
+.tc-faded-blue {
+  color: var(--default-blue-faded) !important;
+}
+
+.tc-grey {
+  color: var(--default-grey) !important;
+}
+
+/* TC defined bg colors */
+.tc-bg-blue {
+  background-color: var(--default-blue) !important;
+}
+
+.tc-bg-faded-blue {
+  background-color: var(--default-blue-faded) !important;
+}
+
+/* TC Classes */
+
+/* Index.html */
+.tc-icon {
+  font-size: 10rem;
+}
+
+.tc-btn {
+  flex-shrink: 0;
+  width: 80%;
+}
+
+/* Login.html and Register.html */
+  .tc-exit-btn {
+    border: none;
+    background-color: inherit;
+    font-size: 2rem;
+  }
+
+  .tc-social-btn {
+    border: 2px solid var(--default-blue-faded);
+    background-color: #fff;
+    width: 72px;
+    height: 72px;
+  }
+
+  .tc-social-btn:focus {
+    box-shadow: 0px 0px 3pt 5pt var(--default-blue-faded);
+    border-color: var(--default-blue);
+  }
+
+  .tc-social-btn:focus i {
+    transform: scale(2);
+  }
+
+  .tc-social-btn,
+  .tc-social-btn i {
+    transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s ease-in-out;
+    -webkit-transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s ease-in-out;
+  }
+
+  .tc-form-field-container .tc-input-label {
+    position: relative;
+  }
+
+  .tc-form-field-container {
+    font-size: 16px;
+  }
+
+  .tc-form-field-container i {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    color: var(--default-blue);
+    font-size: 1.2rem;
+  }
+
+  .tc-form-field-container input {
+    padding: 10px 8px 10px 36px;
+    font-size: 1em;
+    font-family: Montserrat, sans-serif;
+    text-indent: 15px;
+    border: none;
+    border-bottom: 2px solid var(--default-blue-faded);
+    background: none;
+  }
+
+  .tc-form-field-container input:focus {
+    box-shadow: none;
+    border-bottom: 2px solid var(--default-blue);
+    transition: border-bottom 0.5s ease-out;
+    -webkit-transition: border-bottom 0.5s ease-out;
+    -moz-transition: border-bottom 0.5s ease-out;
+    -o-transition: border-bottom 0.5s ease-out;
+  }
+
+/* Input placeholders customisation */
+.tc-form-field-container input::-webkit-input-placeholder {
+  /*color: var(--default-grey);*/
+  color: white;
+  opacity: 0.5;
+  font-style: italic;
+  font-family: Montserrat, sans-serif;
+}
+
+.tc-form-field-container input::-moz-input-placeholder {
+  /*color: var(--default-grey);*/
+  color: white;
+  opacity: 0.5;
+  font-style: italic;
+  font-family: Montserrat, sans-serif;
+}
+
+.tc-form-field-container input::-ms-input-placeholder {
+  /*color: var(--default-grey);*/
+  color: white;
+  opacity: 0.5;
+  font-style: italic;
+  font-family: Montserrat, sans-serif;
+}
+
+.tc-form-field-container input::placeholder {
+  /*color: var(--default-grey);*/
+  color: white;
+  opacity: 0.5;
+  font-style: italic;
+  font-family: Montserrat, sans-serif;
+}
+
+/* Collect.html */
+.tc-nav-btn {
+  border: none;
+  background-color: #fff;
+  font-size: 1.3em;
+}
+
+.tc-faded-btn {
+  opacity: 0.5;
+  transition: opacity 0.38s ease-in-out;
+  -webkit-transition: opacity 0.38s ease-in-out;
+}
+
+.tc-circle-btn {
+  width: 90px;
+  height: 90px;
+  border: 3px solid var(--default-blue);
+  font-size: 1.2em;
+  background-color: #fff;
+  transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+}
+
+.red-border {
+  border: 3px solid var(--default-red);
+}
+
+.tc-circle-btn:active,
+.tc-faded-btn:active {
+  transform: rotateY(360deg);
+}
+
+#workingStage {
+  display: inline-block;
+}
+
+#tm {
+  display: block;
+}
+
+/* Menu.html */
+.tc-user-icon {
+  font-size: 4rem;
+  color: var(--default-white);
+}
+
+.tc-menu-list {
+  list-style-type: none;
+  font-size: 1.3em;
+}
+
+.tc-menu-item {
+  margin-top: 15px;
+}
+
+.tc-link,
+.tc-link:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.tc-link:active,
+.tc-link:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Start to collect Button */
+.collect-btn:hover {
+  animation: pulse 4s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(38, 153, 251, 8);
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(38, 153, 251, 8);
+    box-shadow: 0 0 0 0 rgba(38, 153, 251, 4);
+  }
+
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(38, 153, 251, 8);
+    box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+  }
+
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: absolute;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: .tc-blue;
+  background-color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: white;
+  color: white;
+}
+
+/* Style a general popup container class */
+.popup-container {
+  position: fixed;
+  top: 6em;
+  box-shadow: 3px 15px 20px #d6ecff;
+  max-width: 520px;
+  width: 85vw;
+  z-index: 10;
+  box-sizing: border-box;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  max-height: 80vh;
+  pointer-events: auto;
+}
+
+/* style the outer circle */
+.circle {
+  margin: 20px;
+  display: flex;
+  width: 230px;
+  min-height: 230px;
+  background: #F7FBFE;
+  border-radius: 150px;
+  align-items: center;
+}
+
+/* style the inner circle */
+.inner-circle {
+  margin: 0 auto;
+  width: 110px;
+  height: 110px;
+  background: #dbeeff;
+  border-radius: 70px;
+}
+
+/* style time in save-project popup */
+.add-time {
+  font-size: 45px;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 3px #2699FB;
+}
+
+/* Styling wrapper for custom select element */
+.custom-select-wrapper {
+  background-color: white;
+  width: 80%;
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+}
+
+.custom-select-box, .options-list {
+  margin: 0;
+  width: 100%;
+  border: 2px solid var(--default-blue-faded);
+}
+
+.custom-select-box {
+  padding: 15px 15px 7px 0 !important;
+}
+
+.open .custom-select-box {
+  border-bottom: none;
+}
+
+.custom-select-box span {
+  width: 100%;
+}
+
+/* style text placeholder for save-project popup */
+.placeholder {
+  color: var(--default-blue-faded);
+}
+
+.active-option {
+  color: var(--default-blue);
+}
+
+/* draw and style down-chevron arrow */
+.chevron-arrow {
+  padding: 0;
+  position: relative;
+  margin: 0 0 0 auto;
+  height: 15px;
+  width: 15px;
+}
+
+.chevron-arrow::before, .chevron-arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 0.15rem;
+  height: 50%;
+  transition: all 0.3s;
+}
+
+.chevron-arrow::before {
+   left: -2.2px;
+   transform: rotate(-45deg);
+   background-color: var(--default-blue);
+}
+
+.chevron-arrow::after {
+  left: 2.5px;
+  transform: rotate(45deg);
+  background-color: var(--default-blue);
+}
+
+.open .chevron-arrow::before {
+  left: -2.2px;
+  transform: rotate(45deg);
+}
+
+.open .chevron-arrow::after {
+  left: 2.2px;
+  transform: rotate(-45deg);
+}
+
+.custom-option:hover, .chevron-arrow:hover {
+  cursor: pointer;
+}
+
+/* styling custom select dropdown options list */
+.options-list {
+  position: absolute;
+  top: 100%;
+  padding-right: 30px;
+  display: none;
+  background-color: white;
+  border-top: none;
+  z-index: 15;
+  height: 10vh;
+  overflow-y: scroll;
+  color: var(--default-blue);
+}
+
+.open .options-list {
+  display: block;
+}
+
+.options-list::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-option {
+  position: relative;
+  padding: 7px 0 7px 0;
+  width: 100%;
+}
+
+.faded-blue-bg {
+  background-color: var(--default-blue-faded);
+}
+
+.blue-bg {
+  background-color: var(--default-blue);
+}
+
+.save-btn {
+  font-size: 12px;
+  border-radius: 3px;
+  margin: 20px 10px 40px 10px;
+  border: 2px solid rgba(60, 163, 251, 0);
+}
+
+.edit-btn {
+  font-size: 12px;
+  border: 2px solid rgba(60, 163, 251, 0.4);
+  border-radius: 3px;
+  margin: 20px 10px 40px 10px;
+}
+
+.btn-padding {
+  padding: 10px 30px 10px 30px;
+}
+
+.disable-click {
+  pointer-events: none;
+}
+
+.show-popup {
+  display: flex!important;
+}

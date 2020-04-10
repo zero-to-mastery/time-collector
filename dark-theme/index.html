@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!-- Bootstrap -->
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> -->
 	<!-- FontAwesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
 	<!-- TC-stylesheet -->
@@ -18,22 +19,21 @@
 	<div class="d-flex flex-column align-items-center px-0 tc-container">
 
 		<!-- Clock logo -->
-		<i class="far fa-clock mt-auto tc-icon tc-blue shadow"></i>
+		<i class="far fa-clock mt-auto tc-icon tc-blue"></i>
 		<h1 class="mt-5 mb-0">Time Collector</h1>
 		<p>keep track of your time</p>
 
 		<!-- Main action button -->
-		<a href="./collect.html" class="btn text-white my-4 py-3 text-uppercase tc-bg-blue tc-btn-main-action collect-btn">Start to collect</a>
+		<a href="./collect.html" class="btn text-white my-4 py-3 text-uppercase tc-bg-blue tc-btn collect-btn">Start to collect</a>
 
 		<!-- Reminder (If user do not have an account) Register -->
 		<div class="mt-auto w-100 text-center">
-
-			<p class="tc-blue small">Don't have an account yet?</p>
-			<a href="./register.html"> <button id="tc-register-btn" class="btn btn-block rounded-0 py-3 text-uppercase tc-blue tc-bg-faded-blue mb-3 mx-auto tc-btn-main-action">Register</button> </a>
-
+			<p class="tc-blue small">Don't have an account yet?</p>			
+			<a href="./register.html"> 
+				<button id="tc-register-btn" class="btn-block rounded-0 py-3 text-uppercase tc-blue tc-bg-faded-blue mb-3 mx-auto tc-btn">Register</button> 
+			</a> 
 		</div>
 
 	</div>
-
 </body>
 </html>
