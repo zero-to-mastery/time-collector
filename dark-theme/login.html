@@ -11,11 +11,11 @@
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 	<!-- TC-stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/darkstyle.css">
-
-	<title>TC - Register</title>
+	<title>TC - Sign In</title>
 	<link rel="icon" href="./img/clock64.png"></link>
 </head>
 <body>
+
 	<div class="tc-container">
 		<!-- FontAwesome back button -->
 		<div class="mb-2 p-3 px-sm-5 w-100 text-left">
@@ -24,42 +24,34 @@
 			</button>
 		</div>
 
-		<!-- TC-Registration form -->
+		<!-- TC - Sign In form field container -->
 		<form class="mb-auto px-3 w-100" method="POST">
 
-			<!-- User name, input field container -->
+			<!-- User, username input field -->
 			<div class="tc-form-field-container">
-				<label for="tc-register-username" class="tc-input-label w-100">
+				<label for="tc-login-username" class="tc-input-label w-100">
 					<i class="fas fa-user"></i>
-					<input type="text" class="form-control rounded-0" name="tc-register-username" id="tc-register-username" placeholder="Your name">
+					<input type="text" class="form-control rounded-0" name="tc-login-username" id="tc-login-username" placeholder="Enter username">
 				</label>
 			</div>
 
-			<!-- User email, input field container -->
+			<!-- User, password input field -->
 			<div class="tc-form-field-container">
-				<label for="tc-register-email" class="tc-input-label w-100">
-  				<i class="fas fa-envelope"></i>
-  				<input type="email" class="form-control rounded-0" name="email" id="tc-register-email" placeholder="Your email">
-				</label>
-			</div>
-
-			<!-- User password, input field cointainer -->
-			<div class="tc-form-field-container">
-				<label for="tc-register-password" class="tc-input-label w-100">
-  				<i class="fas fa-lock"></i>
-  				<input type="password" class="form-control rounded-0" name="tc-register-password" id="tc-register-password" placeholder="Your password">
+				<label for="tc-login-password" class="tc-input-label w-100">
+					<i class="fas fa-lock"></i>
+					<input type="password" class="form-control rounded-0" name="tc-login-password" id="tc-login-password" placeholder="Enter password">
 				</label>
 			</div>
 
 		</form>
 
-		<!-- Main button - Register -->
-		<div class="px-3 w-100 text-center">
+		<!-- Main button - Log In -->
+		<div class="mt-auto px-3 w-100 text-center">
 			<a href="#" class="btn btn-1 mb-2 tc-bg-blue text-white pulse-btn">
-				Continue
+				Log in
 			</a>
-			
-			<p class="mb-2 small tc-blue">or</p>
+
+			<a href="#"><p class="mb-2 small">I've forgot my key...</p></a>
 		</div>
 
 		<!-- Social buttons (Facebook, Github, Google+) -->
@@ -68,17 +60,19 @@
 
 			<button class="btn bg-white tc-social-btn tc-blue rounded-circle mx-2"><i class="fab fa-github"></i></button>
 
-			<button class="btn bg-white tc-social-btn mx-2 rounded-circle tc-blue"><i class="fab fa-google-plus-g"></i></button>
+			<button class="btn bg-white tc-social-btn tc-blue rounded-circle mx-2"><i class="fab fa-google-plus-g"></i></button>
 		</div>
 
-		<!-- Reminder (If user has an account) Login -->
+		<!-- Reminder (If user has no account) Register -->
 		<div class="mt-4 px-3 w-100 text-center">
-			<p class="mb-2 small tc-blue">Already have an account?</p>
+			<p class="mb-2 small tc-blue">Don't have an account yet?</p>
 
-			<a href="./login.html" class="btn btn-1 mb-3 tc-bg-faded-blue tc-blue rounded-0">
-				Log In
+			<a href="./register.html" class="btn btn-1 mb-3 tc-bg-faded-blue tc-blue rounded-0">
+				Register
 			</a>
 		</div>
+
 	</div>
+
 </body>
 </html>
