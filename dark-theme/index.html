@@ -2,35 +2,45 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<!-- Bootstrap -->
+	<!-- Bootstrap CDN-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> -->
 	<!-- FontAwesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
 	<!-- TC-stylesheet -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/darkstyle.css">
 	<title>Time Collector</title>
 	<link rel="icon" href="./img/clock64.png"></link>
 </head>
 <body>
 
-	<div class="d-flex flex-column align-items-center px-0 tc-container">
+	<div class="tc-container">
 
 		<!-- Clock logo -->
-		<i class="far fa-clock mt-auto tc-icon tc-blue"></i>
-		<h1 class="mt-5 mb-0">Time Collector</h1>
-		<p>keep track of your time</p>
 
-		<!-- Main action button -->
-		<a href="./collect.html" class="btn text-white my-4 py-3 text-uppercase tc-bg-blue tc-btn collect-btn">Start to collect</a>
+		<div class="mt-4 mb-auto px-3 w-100 text-center">
+			<i class="far fa-clock mt-auto tc-icon tc-blue"></i>
+			<h1 class="mt-5 mb-0">Time Collector</h1>
+			<p>keep track of your time</p>
+		</div>
 
-		<!-- Reminder (If user do not have an account) Register -->
-		<div class="mt-auto w-100 text-center">
-			<p class="tc-blue small">Don't have an account yet?</p>			
-			<a href="./register.html"> 
-				<button id="tc-register-btn" class="btn-block rounded-0 py-3 text-uppercase tc-blue tc-bg-faded-blue mb-3 mx-auto tc-btn">Register</button> 
+		<!-- Main button - call to action  -->
+		<div class="mb-5 px-3 w-100 text-center">
+			<a href="./collect.html" class="btn btn-1 mb-5 tc-bg-blue text-white pulse-btn">
+				Start to collect
+			</a>
+		</div>
+
+		<!-- Log in and Register buttons -->
+		<div class="mt-4 px-3 w-100 text-center">
+			<p class="tc-blue mb-2 small">Already have an account?
+				<a href="./login.html">Log In</a>
+			</p>			
+			
+			<a href="./register.html" class="btn btn-1 mb-3 tc-bg-faded-blue tc-blue rounded-0">
+				Register
 			</a> 
 		</div>
 
