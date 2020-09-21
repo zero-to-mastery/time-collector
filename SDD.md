@@ -85,7 +85,7 @@ Add ideas here:
 
 
 ### Timer page
-- [ ] Display today's date
+- [ done ] Display today's date
 - [ ] Have a counter
 - [ ] Have a start, stop and reset button
 - [ ] Have the possibility to add manual hours

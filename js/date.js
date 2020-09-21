@@ -1,14 +1,16 @@
 function putDate(date){
-
 var dateDisplay = document.querySelector(date);
         let options = {
           weekday: "long",
           day: "numeric",
           month: "long",    
         };
-dateDisplay.textContent = new Date().toLocaleDateString("en-US", options); 
+var dateValue = new Date().toLocaleDateString("en-US", options); 
+
+dateDisplay.textContent = "Current date: " + dateValue;
 }
 putDate(".date");
+putDate(".date-modal")
 
 function putTime(time){
 var timeDisplay = document.querySelector(time);
@@ -16,7 +18,7 @@ var timeDisplay = document.querySelector(time);
           day: "2-digit",
           month: "2-digit",
           year: "2-digit",
-		  hour: "numeric",
+		      hour: "numeric",
           minute: "2-digit",
 		};
 
