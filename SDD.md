@@ -184,7 +184,7 @@ Please feel free to update this section with a schematic of fonts used so far
 
 ### Dark-Theme
 The dark-theme is currently being built side-by-side to the original normal theme in its own folder. 
-One drawback is that all changes should be x twice, one for each mode. 
+One drawback is that all changes should be done twice, one for each mode. 
 One opportunity is that when bringing existing material over from normal theme, one can strip back and clean up all the excess files and data, since as you will notice their are many extra files and data in normal mode.
    
 
