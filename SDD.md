@@ -1,5 +1,4 @@
 # Time Collector
-======
 
 > Below is a summary of the apps functionality, requirements, design language, tech specifications and more to come.
 > It is intended to be used as a guide while we are building this app. Please contribute by making suggestions, changes, corrections
@@ -54,9 +53,10 @@ Add ideas here:
 
 ### Landing page
 
-- [ done ] Have a call to action = start to collect
+- [ x ] Have a call to action = start to collect
 - [ ] Describe the application and its features (see below: ### Landing Page )
-- [ ] Easy access to documentation and repository (see below: ### Landing Page )
+- [ ] Easy access to documentation (see below: ### Landing Page )
+- [ x ] Easy access to repository (see below: ### Landing Page )
 
 #### Routes to take from the landing page:
    1. [ start to collect ] goes to the timer in (#guest-mode)
@@ -66,8 +66,8 @@ Add ideas here:
 ### Register page
 - [ ] Have a way for users to register with: name, email, pass word
 - [ ] Have a way for users to register with: facebook, github, google. 
-- [ done ] Have a button that redirects to login
-- [ done ] Have a back to landing page button
+- [ x ] Have a button that redirects to login
+- [ x ] Have a back to landing page button
 
 ***to do:***
 - [ ] Usee CSS to make page max height 100 % of vh
@@ -75,8 +75,8 @@ Add ideas here:
 
 ### Login page
 - [ ] Have a way for users to login
-- [ done ] Have a button that redirects to register
-- [ done ] Have a back to landing page button
+- [ x ] Have a button that redirects to register
+- [ x ] Have a back to landing page button
 - [ ] Have a way for users to retrieve forgotton password
 
 ***to do:***
@@ -85,7 +85,7 @@ Add ideas here:
 
 
 ### Timer page
-- [ done ] Display today's date
+- [ x ] Display today's date
 - [ ] Have a counter
 - [ ] Have a start, stop and reset button
 - [ ] Have the possibility to add manual hours
@@ -184,7 +184,7 @@ Please feel free to update this section with a schematic of fonts used so far
 
 ### Dark-Theme
 The dark-theme is currently being built side-by-side to the original normal theme in its own folder. 
-One drawback is that all changes should be done twice, one for each mode. 
+One drawback is that all changes should be x twice, one for each mode. 
 One opportunity is that when bringing existing material over from normal theme, one can strip back and clean up all the excess files and data, since as you will notice their are many extra files and data in normal mode.
    
 

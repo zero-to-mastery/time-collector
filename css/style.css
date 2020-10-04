@@ -510,3 +510,16 @@ p {
 .show-popup {
   display: flex!important;
 }
+
+
+/* landing page corner menu */
+.corner-menu {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+.tc-corner-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
