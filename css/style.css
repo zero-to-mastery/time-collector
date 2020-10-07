@@ -250,7 +250,7 @@ p {
 
 /* Start to collect Button */
 .collect-btn:hover {
-  animation: pulse 4s infinite;
+  animation: pulse 3s infinite;
 }
 
 @-webkit-keyframes pulse {
@@ -298,7 +298,7 @@ p {
 
 /* Style navigation menu links */
 .topnav a {
-  color: .tc-blue;
+  color: var(--default-blue);
   background-color: white;
   padding: 14px 16px;
   text-decoration: none;
@@ -509,4 +509,17 @@ p {
 
 .show-popup {
   display: flex!important;
+}
+
+
+/* landing page corner menu */
+.corner-menu {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+
+.tc-corner-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
 }

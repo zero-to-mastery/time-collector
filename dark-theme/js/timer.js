@@ -19,24 +19,30 @@ const totalTime = document.getElementById("totalTime");
 const workingStage = document.getElementById("workingStage");
 
 // Pad a single digit number with one leading zero
-const pad = num => (num > 9 ? num : "0" + num);
+const pad = (num) => (num > 9 ? num : "0" + num);
 
 const startTimer = () => {
   totalSeconds++;
-  const setHour = seconds => Math.floor(seconds / 3600),
-    setMinute = seconds => Math.floor((seconds / 60) % 60),
-    setSeconds = seconds => seconds % 60;
+  const setHour = (seconds) => Math.floor(seconds / 3600),
+    setMinute = (seconds) => Math.floor((seconds / 60) % 60),
+    setSeconds = (seconds) => seconds % 60;
 
-  if ( timerVar ) {
+  if (timerVar) {
     workedSeconds++;
-    timer.innerHTML = `${pad(setHour(workedSeconds))}:${pad(setMinute(workedSeconds))}:${pad(setSeconds(workedSeconds))}`;
+    timer.innerHTML = `${pad(setHour(workedSeconds))}:${pad(
+      setMinute(workedSeconds)
+    )}:${pad(setSeconds(workedSeconds))}`;
   }
-  if ( breakVar ) {
+  if (breakVar) {
     breakSeconds++;
-    timer.innerHTML = `${pad(setHour(breakSeconds))}:${pad(setMinute(breakSeconds))}:${pad(setSeconds(breakSeconds))}`;
+    timer.innerHTML = `${pad(setHour(breakSeconds))}:${pad(
+      setMinute(breakSeconds)
+    )}:${pad(setSeconds(breakSeconds))}`;
   }
 
-  totalTime.innerHTML = `${pad(setHour(totalSeconds))}:${pad(setMinute(totalSeconds))}:${pad(setSeconds(totalSeconds))}`;
+  totalTime.innerHTML = `${pad(setHour(totalSeconds))}:${pad(
+    setMinute(totalSeconds)
+  )}:${pad(setSeconds(totalSeconds))}`;
 };
 
 const timerBreak = () => {
@@ -46,42 +52,43 @@ const timerBreak = () => {
   let seconds = breakSeconds % 60;
 
   breakTimer.innerHTML = `${pad(hour)}:${pad(minute)}:${pad(seconds)}`;
-}
+};
 
 startBtn.addEventListener("click", () => {
-  if (startBtn.getAttribute('data-toggle') === 'start'){
+  if (startBtn.getAttribute("data-toggle") === "start") {
     stopTimer(breakVar);
     breakVar = null;
     timerVar = setInterval(startTimer, 1000);
-    startBtn.innerText = 'Break';
+    startBtn.innerText = "Break";
     startBtn.classList.toggle("red-border");
-    startBtn.setAttribute('data-toggle', 'break');
-    workingStage.innerText = 'WORKING TIME';
-  }else {
+    startBtn.setAttribute("data-toggle", "break");
+    workingStage.innerText = "WORKING TIME";
+  } else {
     stopTimer(timerVar);
     timerVar = null;
     breakVar = setInterval(startTimer, 1000);
-    startBtn.innerText = 'Start';
+    startBtn.innerText = "Start";
     startBtn.classList.toggle("red-border");
-    startBtn.setAttribute('data-toggle', 'start');
-    workingStage.innerText = 'YOU ARE ON THE BREAK';
+    startBtn.setAttribute("data-toggle", "start");
+    workingStage.innerText = "YOU ARE ON THE BREAK";
   }
 });
 
 stopBtn.addEventListener("click", (e) => {
-
   // Trigger save-project popup container
   if (e.target.textContent === "Save") {
-    const setHour = seconds => Math.floor(seconds / 3600),
-          setMinute = seconds => Math.floor((seconds / 60) % 60);
+    const setHour = (seconds) => Math.floor(seconds / 3600),
+      setMinute = (seconds) => Math.floor((seconds / 60) % 60);
     stopTimer(timerVar);
     stopTimer(breakVar);
 
     // show hours and minutes used on current timer
-    document.querySelector('#save-project .add-time').textContent = `${pad(setHour(totalSeconds))}:${pad(setMinute(totalSeconds))}`;
-    document.querySelector('#save-project').classList.add('show-popup');
-    document.querySelector('.tc-container').classList.add('disable-click');
-    return
+    document.querySelector("#save-project .add-time").textContent = `${pad(
+      setHour(totalSeconds)
+    )}:${pad(setMinute(totalSeconds))}`;
+    document.querySelector("#save-project").classList.add("show-popup");
+    document.querySelector(".tc-container").classList.add("disable-click");
+    return;
   }
 
   stopTimer(timerVar);
@@ -98,15 +105,15 @@ resetBtn.addEventListener("click", () => {
   totalSeconds = 0;
   breakSeconds = 0;
   workSeconds = 0;
-  startBtn.innerText = 'Start';
+  startBtn.innerText = "Start";
   workingStage.innerText = "Let's Get Started";
   startBtn.classList.remove("red-border");
 });
 
-const stopTimer = timer => clearInterval(timer);
+const stopTimer = (timer) => clearInterval(timer);
 
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
+function toggleNavLinks() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
     x.style.display = "none";
