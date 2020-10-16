@@ -146,7 +146,7 @@ The app currently has buttons for simple auth with email and password or option 
 These need to be made functional.
 
 ### Guest mode
-Users are able to use the app without signing in, simply by clicking the button: start to collect. This mode offers full functionality, except for the ability to store seesion data to the database.
+Users are able to use the app without signing in, simply by clicking the button: start to collect. This mode offers full functionality, except for the ability to store session data to the database.
 
 ### New project
 Users should be able to add details about a project and the client.
