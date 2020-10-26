@@ -523,3 +523,9 @@ p {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+.zero-to-mastery-logo {
+  position: fixed;
+  top: 1rem;
+  right: 3.5rem;
+  width: 1.4%;
