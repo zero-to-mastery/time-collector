@@ -90,7 +90,7 @@ p {
 }
 
 .description {
-  padding-top: 3vh;
+  padding-top: 4vh;
 }
 
 /* Login.html and Register.html */
@@ -524,12 +524,13 @@ p {
 }
 
 .tc-corner-icon {
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   cursor: pointer;
 }
 
 .zero-to-mastery-logo {
   position: fixed;
   top: 1rem;
-  right: 3.5rem;
-  width: 1.4%;
+  right: 4.5rem;
+  width: 1.8%;
+}
