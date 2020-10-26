@@ -89,6 +89,10 @@ p {
   width: 80%;
 }
 
+.description {
+  padding-top: 3vh;
+}
+
 /* Login.html and Register.html */
 .tc-exit-btn {
   border: none;
