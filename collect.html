@@ -1,140 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-  <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-  <!-- TC-stylesheet -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="icon" href="./img/clock64.png">
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="bootstrap/css/bootstrap.min.css"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+    />
+    <!-- TC-stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" href="./img/clock64.png" />
 
-  <title>TC - Collect</title>
-</head>
-<body>
-  <div class="d-flex flex-column align-items-center px-2 tc-container">
-    <!-- Top row (Menu button, Page name, Info button) -->
-    <div class="d-flex justify-content-between w-100 tc-blue my-5">
-      <section>
-        <!-- Navigation/burger menu starts-->
-        <div class="topnav">
-          <a href="#home" class="active">...</a>
-          <!-- Navigation links (hidden by default) -->
-          <div id="myLinks">
-            <a href="#news">Home</a>
-            <a href="#collect">Collect</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+
+    <title>TC - Collect</title>
+  </head>
+  <body>
+    <div class="d-flex flex-column align-items-center px-2 tc-container">
+      <!-- Top row (Menu button, Page name, Info button) -->
+      <div class="d-flex justify-content-between w-100 tc-blue my-5">
+        <section>
+          <!-- Navigation/burger menu starts-->
+          <div class="topnav">
+            <a href="#home" class="active">...</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+              <a href="#news">Home</a>
+              <a href="#collect">Collect</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a
+              href="javascript:void(0);"
+              class="icon tc-blue"
+              onclick="toggleNavLinks()"
+            >
+              <i class="fa fa-bars"></i>
+            </a>
           </div>
-          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-          <a
-            href="javascript:void(0);"
-            class="icon tc-blue"
-            onclick="toggleNavLinks()"
+          <!-- Navigation/burger menu ends -->
+        </section>
+
+        <!-- Collect title in the centre of page -->
+        <h5 class="text-uppercase tc-blue align-self-center">Collect</h5>
+
+        <!-- Button for ellipsis (still needs to be activated) -->
+        <button type="button" class="tc-nav-btn tc-blue">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+      </div>
+
+      <!-- save project modal -->
+      <div class="popup-container bg-white" id="save-project">
+        <a href="collect.html" class="tc-exit-btn mr-auto pl-3">
+          <i class="fas fa-arrow-left tc-blue"></i>
+        </a>
+        <h4 class="tc-blue font-weight-bold">Save to project</h4>
+        <div class="circle">
+          <div class="inner-circle d-flex justify-content-center">
+            <h5 class="add-time tc-blue align-self-center">01:10</h5>
+          </div>
+        </div>
+        <p class="date-modal tc-blue"></p>
+
+        <div class="custom-select-wrapper d-flex flex-column">
+          <div class="d-flex custom-select-box pr-3">
+            <span class="placeholder">Select Project</span>
+            <div class="chevron-arrow"></div>
+          </div>
+          <div class="options-list">
+            <div class="custom-option">101 - Awesome GP</div>
+            <div class="custom-option">102 - Project 2</div>
+            <div class="custom-option">103 - Delivery</div>
+            <div class="custom-option">104 - Food Blog</div>
+          </div>
+        </div>
+
+        <div class="d-flex">
+          <div class="btn save-btn text-white btn-padding faded-blue-bg">
+            SAVE
+          </div>
+          <div class="btn edit-btn tc-blue btn-padding">EDIT</div>
+        </div>
+      </div>
+
+      <!-- Date and time-->
+      <p class="date"></p>
+      <p class="time tc-blue"></p>
+
+      <!-- Timer -->
+      <div class="w-100 text-center my-5">
+        <p>Total Time:</p>
+        <p id="totalTime">00:00:00</p>
+        <button
+          type="button"
+          id="startBtn"
+          class="tc-circle-btn tc-grey rounded-circle"
+          data-toggle="start"
+        >
+          Start
+        </button>
+        <!-- <button type="button" id="breakBtn" class="breakBtn tc-circle-btn tc-grey rounded-circle">Break</button> -->
+
+        <div class="my-5 d-flex w-100 justify-content-between">
+          <button
+            type="button"
+            id="stopBtn"
+            class="tc-circle-btn tc-grey rounded-circle"
           >
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>
-        <!-- Navigation/burger menu ends -->
-      </section>
+            Stop
+          </button>
 
-      <!-- Collect title in the centre of page -->
-      <h5 class="text-uppercase tc-blue align-self-center">Collect</h5>
+          <div id="tm">
+            <p id="workingStage" class="tc-red">Let's Get Started</p>
+            <h2 id="timer" class="h1 tc-blue align-self-center">00:00:00</h2>
+          </div>
 
-      <!-- Button for ellipsis (still needs to be activated) -->
-      <button type="button" class="tc-nav-btn tc-blue">
-        <i class="fas fa-ellipsis-v"></i>
-      </button>
-    </div>
-
-    <!-- save project modal -->
-    <div class="popup-container bg-white" id="save-project">
-      <a href="collect.html" class="tc-exit-btn mr-auto pl-3">
-        <i class="fas fa-arrow-left tc-blue"></i>
-      </a>
-      <h4 class="tc-blue font-weight-bold">Save to project</h4>
-      <div class="circle">
-        <div class="inner-circle d-flex justify-content-center">
-          <h5 class="add-time tc-blue align-self-center">01:10</h5>
-        </div>
-      </div>
-      <p class="date-modal tc-blue"></p>
-
-      <div class="custom-select-wrapper d-flex flex-column">
-        <div class="d-flex custom-select-box pr-3">
-          <span class="placeholder">Select Project</span>
-          <div class="chevron-arrow"></div>
-        </div>
-        <div class="options-list">
-          <div class="custom-option">101 - Awesome GP</div>
-          <div class="custom-option">102 - Project 2</div>
-          <div class="custom-option">103 - Delivery</div>
-          <div class="custom-option">104 - Food Blog</div>
-        </div>
-      </div>
-
-      <div class="d-flex">
-        <div class="save-btn text-white btn-padding faded-blue-bg">SAVE</div>
-        <div class="edit-btn tc-blue btn-padding">EDIT</div>
-      </div>
-    </div>
-
-    <!-- Date and time-->
-    <p class="date"></p>
-    <p class="time tc-blue"></p>
-
-    <!-- Timer -->
-    <div class="w-100 text-center my-5">
-      <p>Total Time:</p>
-      <p id="totalTime">00:00:00</p>
-      <button
-        type="button"
-        id="startBtn"
-        class="tc-circle-btn tc-grey rounded-circle"
-        data-toggle="start"
-      >
-        Start
-      </button>
-      <!-- <button type="button" id="breakBtn" class="breakBtn tc-circle-btn tc-grey rounded-circle">Break</button> -->
-
-      <div class="my-5 d-flex w-100 justify-content-between">
-        <button
-          type="button"
-          id="stopBtn"
-          class="tc-circle-btn tc-grey rounded-circle"
-        >
-          Stop
-        </button>
-
-        <div id="tm">
-          <p id="workingStage" class="tc-red">Let's Get Started</p>
-          <h2 id="timer" class="h1 tc-blue align-self-center">00:00:00</h2>
+          <button
+            type="button"
+            id="resetBtn"
+            class="tc-circle-btn tc-grey rounded-circle"
+          >
+            Reset
+          </button>
         </div>
 
         <button
           type="button"
-          id="resetBtn"
-          class="tc-circle-btn tc-grey rounded-circle"
+          class="tc-circle-btn tc-grey tc-faded-btn rounded-circle"
         >
-          Reset
+          Manual
         </button>
       </div>
-
-      <button
-        type="button"
-        class="tc-circle-btn tc-grey tc-faded-btn rounded-circle"
-      >
-        Manual
-      </button>
     </div>
-  </div>
 
-  <script src="js/date.js"></script>
-  <script src="js/timer.js"></script>
-  <script src="js/menus.js"></script>
-</body>
+    <script src="js/date.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/menus.js"></script>
+  </body>
 </html>
