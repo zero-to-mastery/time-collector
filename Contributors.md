@@ -69,6 +69,8 @@
 
 - **[marelons1337](https://github.com/marelons1337)**
 
+- **[Himanshu-dev-web](https://github.com/Himanshu-dev-web)**
+
 - **[aokdirova](https://github.com/aokdirova)**
 
 - **[aldrinmcaalim](https://github.com/aldrinmcaalim)**
