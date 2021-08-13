@@ -1,69 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <!-- Bootstrap -->
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-	<!-- FontAwesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-	<!-- TC-stylesheet -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="icon" href="./img/clock64.png"/>
-  
-	<title>TC - Sign In</title>
-</head>
-<body>
-	<div class="d-flex flex-column align-items-center px-0 tc-container">
-		<!-- FontAwesome back Btn -->
-		<a href="register.html" class="tc-exit-btn mt-4 mr-auto pl-3">
-			<i class="fas fa-arrow-left tc-blue"></i>
-		</a>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="bootstrap/css/bootstrap.min.css"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+    />
+    <!-- TC-stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" href="./img/clock64.png" />
 
-		<!-- TC - Sign In form field container -->
-		<form class="form-group w-100 mt-5" method="POST">
+    <title>TC - Sign In</title>
+  </head>
+  <body>
+    <div class="d-flex flex-column align-items-center px-0 tc-container">
+      <!-- FontAwesome back Btn -->
+      <a href="register.html" class="tc-exit-btn mt-4 mr-auto pl-3">
+        <i class="fas fa-arrow-left tc-blue"></i>
+      </a>
 
-			<!-- User, username input field -->
-			<div class="tc-form-field-container p-3">
-				<label for="tc-login-username" class="tc-input-label w-100">
-					<i class="fas fa-user"></i>
-					<input type="text" class="form-control rounded-0" name="tc-login-username" id="tc-login-username" placeholder="Enter username">
-				</label>
-			</div>
+      <!-- TC - Sign In form field container -->
+      <form class="form-group w-100 mt-5" method="POST">
+        <!-- User, username input field -->
+        <div class="tc-form-field-container p-3">
+          <label for="tc-login-username" class="tc-input-label w-100">
+            <i class="fas fa-user"></i>
+            <input
+              type="text"
+              class="form-control rounded-0"
+              name="tc-login-username"
+              id="tc-login-username"
+              placeholder="Enter username"
+            />
+          </label>
+        </div>
 
-			<!-- User, password input field -->
-			<div class="tc-form-field-container p-3">
-				<label for="tc-login-password" class="tc-input-label w-100">
-					<i class="fas fa-lock"></i>
-					<input type="password" class="form-control rounded-0" name="tc-login-password" id="tc-login-password" placeholder="Enter password">
-				</label>
-			</div>
+        <!-- User, password input field -->
+        <div class="tc-form-field-container p-3">
+          <label for="tc-login-password" class="tc-input-label w-100">
+            <i class="fas fa-lock"></i>
+            <input
+              type="password"
+              class="form-control rounded-0"
+              name="tc-login-password"
+              id="tc-login-password"
+              placeholder="Enter password"
+            />
+          </label>
+        </div>
 
-			<!-- Main button ("SignIn") and Forgotten password-->
-			<div class="tc-form-field-container p-3">
-				<button class="w-100 btn text-uppercase text-white py-3 tc-bg-blue tc-btn-main-action">Log in</button>
-			</div>
-			<a href="#"><p class="tc-blue small text-center">I've forgot my key...</p></a>
-		</form>
+        <!-- Main button ("SignIn") and Forgotten password-->
+        <div class="tc-form-field-container p-3">
+          <button
+            class="
+              w-100
+              btn
+              text-uppercase text-white
+              py-3
+              tc-bg-blue tc-btn-main-action
+            "
+          >
+            Log in
+          </button>
+        </div>
+        <a href="#"
+          ><p class="tc-blue small text-center">I've forgot my key...</p></a
+        >
+      </form>
 
-		<!-- Social buttons (Facebook, Github, Google+) -->
-		<div class="mx-auto">
-			<button class="btn bg-white tc-social-btn tc-blue rounded-circle mx-2"><i class="fab fa-facebook-f"></i></button>
+      <!-- Social buttons (Facebook, Github, Google+) -->
+      <div class="mx-auto">
+        <button
+          id="btn-fb"
+          class="btn bg-white tc-social-btn tc-blue rounded-circle mx-2"
+          \
+          scope="public_profile,email"
+          onlogin="checkLoginState();"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </button>
 
-			<button class="btn bg-white tc-social-btn tc-blue rounded-circle mx-2"><i class="fab fa-github"></i></button>
+        <button class="btn bg-white tc-social-btn tc-blue rounded-circle mx-2">
+          <i class="fab fa-github"></i>
+        </button>
 
-			<button class="btn bg-white tc-social-btn tc-blue rounded-circle mx-2"><i class="fab fa-google-plus-g"></i></button>
-		</div>
+        <button class="btn bg-white tc-social-btn tc-blue rounded-circle mx-2">
+          <i class="fab fa-google-plus-g"></i>
+        </button>
+      </div>
 
-		<div class="mt-auto w-100 text-center">
-			<p class="tc-blue small">Don't have an account yet?</p>
+      <div class="mt-auto w-100 text-center">
+        <p class="tc-blue small">Don't have an account yet?</p>
 
-			<a href="./register.html">
-				<button id="tc-register-btn" class="btn btn-block rounded-0 py-3 text-uppercase tc-blue tc-bg-faded-blue">Register</button>
-			</a>
-		</div>
-	</div>
-</body>
+        <a href="./register.html">
+          <button
+            id="tc-register-btn"
+            class="
+              btn btn-block
+              rounded-0
+              py-3
+              text-uppercase
+              tc-blue tc-bg-faded-blue
+            "
+          >
+            Register
+          </button>
+        </a>
+      </div>
+    </div>
+    <script src="./js/login.js"></script>
+  </body>
 </html>

@@ -1,53 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-	<!-- Bootstrap -->
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-	<!-- FontAwesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-	<!-- TC-stylesheet -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-  	<link rel="icon" href="./img/clock64.png">
-  
-	<title>Time Collector</title>
-</head>
-<body>
-  <!-- Corner menu -->
-  <div class="corner-menu">
-    <a href="https://github.com/zero-to-mastery/time-collector" target="_blank">
-      <i class="fab fa-github tc-corner-icon tc-blue"></i>
-    </a>
-    <a href="https://github.com/zero-to-mastery" target="_blank">
-      <i><img class='zero-to-mastery-logo' src="img/zero-to-mastery-logo.png" alt="zero-to-mastery-logo"></i>
-    </a>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-	<div class="d-flex flex-column align-items-center px-0 tc-container">
-		<!-- Clock logo -->
-		<i class="far fa-clock mt-auto tc-icon tc-blue shadow"></i>
-		<h1 class="mt-5 mb-0">Time Collector</h1>
-		<p>keep track of your time</p>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="bootstrap/css/bootstrap.min.css"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"
+    />
+    <!-- TC-stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" href="./img/clock64.png" />
 
-		<!-- Main action button -->
-    <a href="./collect.html" class="btn text-white my-4 py-3 text-uppercase tc-bg-blue tc-btn-main-action collect-btn">
-      Start to collect
-	</a>
+    <title>Time Collector</title>
+  </head>
+  <body>
+    <!-- Corner menu -->
 
-	<p class='description'>This timer allows you to keep track of how long you've spent working on each project, to help more accurately estimate
-	your time for future projects.</p>
-	
-
-		<!-- Reminder (If user does not have an account) Register -->
-		<div class="mt-auto w-100 text-center">
-			<p class="tc-blue small">Don't have an account yet?</p>
-      <a href="./register.html" id="tc-register-btn" class="btn btn-block rounded-0 py-3 text-uppercase tc-blue tc-bg-faded-blue mb-3 mx-auto tc-btn-main-action">
-        Register
+    <div class="corner-menu">
+      <a
+        href="https://github.com/zero-to-mastery/time-collector"
+        target="_blank"
+      >
+        <i class="fab fa-github tc-corner-icon tc-blue"></i>
       </a>
-		</div>
-	</div>
-</body>
+      <a href="https://github.com/zero-to-mastery" target="_blank">
+        <i
+          ><img
+            class="zero-to-mastery-logo"
+            src="img/zero-to-mastery-logo.png"
+            alt="zero-to-mastery-logo"
+        /></i>
+      </a>
+    </div>
+
+    <div class="d-flex flex-column align-items-center px-0 tc-container">
+      <!-- Clock logo -->
+      <i class="far fa-clock mt-auto tc-icon tc-blue shadow"></i>
+      <h1 class="mt-5 mb-0">Time Collector</h1>
+      <p>keep track of your time</p>
+
+      <!-- Main action button -->
+      <a
+        href="./collect.html"
+        class="
+          btn
+          text-white
+          my-4
+          py-3
+          text-uppercase
+          tc-bg-blue tc-btn-main-action
+          collect-btn
+        "
+      >
+        Start to collect
+      </a>
+
+      <p class="description text-center">
+        This timer allows you to keep track of how long you've spent working on
+        each project, to help more accurately estimate your time for future
+        projects.
+      </p>
+
+      <!-- Reminder (If user does not have an account) Register -->
+      <div class="mt-auto w-100 text-center">
+        <p class="tc-blue small">Don't have an account yet?</p>
+        <a
+          href="./register.html"
+          id="tc-register-btn"
+          class="
+            btn btn-block
+            rounded-0
+            py-3
+            text-uppercase
+            tc-blue tc-bg-faded-blue
+            mb-3
+            mx-auto
+            tc-btn-main-action
+          "
+        >
+          Register
+        </a>
+      </div>
+    </div>
+  </body>
 </html>

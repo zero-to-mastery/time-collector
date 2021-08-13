@@ -1,9 +1,9 @@
-@import 'font.css';
+@import "font.css";
 
 /* Variable, for easier use */
 :root {
-  --default-blue: #2699FB;
-  --default-blue-faded: #BCE0FD;
+  --default-blue: #2699fb;
+  --default-blue-faded: #bce0fd;
   --default-grey: #707070;
   --default-white: #fff;
   --default-red: #ff6347;
@@ -23,7 +23,6 @@ button {
 }
 
 button:hover {
-
   cursor: pointer;
 }
 
@@ -119,7 +118,8 @@ p {
 .tc-social-btn,
 .tc-social-btn i {
   transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s ease-in-out;
-  -webkit-transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s ease-in-out;
+  -webkit-transition: box-shadow 0.3s, border-color 0.3s,
+    transform 0.3s ease-in-out;
 }
 
 .tc-form-field-container .tc-input-label {
@@ -201,7 +201,9 @@ p {
 .tc-circle-btn {
   width: 90px;
   height: 90px;
-  box-shadow: inset -3px 0 0 var(--default-blue), inset 0 -3px 0 var(--default-blue), inset 3px 0 0 var(--default-blue), inset 0 3px 0 var(--default-blue);
+  box-shadow: inset -3px 0 0 var(--default-blue),
+    inset 0 -3px 0 var(--default-blue), inset 3px 0 0 var(--default-blue),
+    inset 0 3px 0 var(--default-blue);
   font-size: 1.2em;
   background-color: #fff;
   transition: transform 0.5s ease-in-out;
@@ -209,7 +211,9 @@ p {
 }
 
 .red-border {
-  box-shadow: inset -3px 0 0 var(--default-red), inset 0 -3px 0 var(--default-red), inset 3px 0 0 var(--default-red), inset 0 3px 0 var(--default-red);
+  box-shadow: inset -3px 0 0 var(--default-red),
+    inset 0 -3px 0 var(--default-red), inset 3px 0 0 var(--default-red),
+    inset 0 3px 0 var(--default-red);
 }
 
 .tc-circle-btn:active,
@@ -226,6 +230,17 @@ p {
 }
 
 /* Menu.html */
+@keyframes pop {
+  from {
+    top: 100px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
 .tc-user-icon {
   font-size: 4rem;
   color: var(--default-white);
@@ -249,7 +264,7 @@ p {
 .tc-link:active,
 .tc-link:focus {
   color: #fff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Start to collect Button */
@@ -351,7 +366,7 @@ p {
   display: flex;
   width: 230px;
   min-height: 230px;
-  background: #F7FBFE;
+  background: #f7fbfe;
   border-radius: 150px;
   align-items: center;
 }
@@ -370,7 +385,7 @@ p {
   font-size: 45px;
   letter-spacing: 3px;
   font-weight: bolder;
-  text-shadow: 1px 1px 3px #2699FB;
+  text-shadow: 1px 1px 3px #2699fb;
 }
 
 /* Styling wrapper for custom select element */
@@ -382,7 +397,8 @@ p {
   font-size: 16px;
 }
 
-.custom-select-box, .options-list {
+.custom-select-box,
+.options-list {
   margin: 0;
   width: 100%;
   border: 2px solid var(--default-blue-faded);
@@ -418,7 +434,8 @@ p {
   width: 15px;
 }
 
-.chevron-arrow::before, .chevron-arrow::after {
+.chevron-arrow::before,
+.chevron-arrow::after {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -428,9 +445,9 @@ p {
 }
 
 .chevron-arrow::before {
-   left: -2.2px;
-   transform: rotate(-45deg);
-   background-color: var(--default-blue);
+  left: -2.2px;
+  transform: rotate(-45deg);
+  background-color: var(--default-blue);
 }
 
 .chevron-arrow::after {
@@ -449,7 +466,8 @@ p {
   transform: rotate(-45deg);
 }
 
-.custom-option:hover, .chevron-arrow:hover {
+.custom-option:hover,
+.chevron-arrow:hover {
   cursor: pointer;
 }
 
@@ -512,9 +530,8 @@ p {
 }
 
 .show-popup {
-  display: flex!important;
+  display: flex !important;
 }
-
 
 /* landing page corner menu */
 .corner-menu {
