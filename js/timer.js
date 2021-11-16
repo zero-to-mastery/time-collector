@@ -107,7 +107,7 @@ const stopTimer = timer => clearInterval(timer);
 
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function toggleNavLinks() {
-  var x = document.getElementById("myLinks");
+  let x = document.getElementById("myLinks");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
