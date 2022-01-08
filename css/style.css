@@ -551,3 +551,8 @@ p {
   right: 4.5rem;
   width: 1.8%;
 }
+
+.tc-circle-btn:hover {
+  background-color: #2699fb;
+  color: var(--default-white) !important;
+}
